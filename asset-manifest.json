@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Webshop_DataFlow_Redux_Project.github.io/react-gh-pages/static/css/main.641a36d4.chunk.css",
+    "main.js": "/Webshop_DataFlow_Redux_Project.github.io/react-gh-pages/static/js/main.3286f12d.chunk.js",
+    "main.js.map": "/Webshop_DataFlow_Redux_Project.github.io/react-gh-pages/static/js/main.3286f12d.chunk.js.map",
+    "runtime-main.js": "/Webshop_DataFlow_Redux_Project.github.io/react-gh-pages/static/js/runtime-main.222352cf.js",
+    "runtime-main.js.map": "/Webshop_DataFlow_Redux_Project.github.io/react-gh-pages/static/js/runtime-main.222352cf.js.map",
+    "static/js/2.1c16308c.chunk.js": "/Webshop_DataFlow_Redux_Project.github.io/react-gh-pages/static/js/2.1c16308c.chunk.js",
+    "static/js/2.1c16308c.chunk.js.map": "/Webshop_DataFlow_Redux_Project.github.io/react-gh-pages/static/js/2.1c16308c.chunk.js.map",
+    "index.html": "/Webshop_DataFlow_Redux_Project.github.io/react-gh-pages/index.html",
+    "static/css/main.641a36d4.chunk.css.map": "/Webshop_DataFlow_Redux_Project.github.io/react-gh-pages/static/css/main.641a36d4.chunk.css.map",
+    "static/js/2.1c16308c.chunk.js.LICENSE.txt": "/Webshop_DataFlow_Redux_Project.github.io/react-gh-pages/static/js/2.1c16308c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.222352cf.js",
+    "static/js/2.1c16308c.chunk.js",
+    "static/css/main.641a36d4.chunk.css",
+    "static/js/main.3286f12d.chunk.js"
+  ]
+}
