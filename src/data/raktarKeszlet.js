@@ -1,0 +1,17 @@
+export const raktarKeszlet=[
+    {azonosito:1, megnevezes:'Termék #1', ar: 10, mennyisegKeszleten:1, mennyisegKosarban:0},
+    {azonosito:2, megnevezes:'Termék #2', ar: 20, mennyisegKeszleten:2, mennyisegKosarban:0},
+    {azonosito:3, megnevezes:'Termék #3', ar: 30, mennyisegKeszleten:1, mennyisegKosarban:0},
+    {azonosito:4, megnevezes:'Termék #4', ar: 40, mennyisegKeszleten:2, mennyisegKosarban:0},
+    {azonosito:5, megnevezes:'Termék #5', ar: 50, mennyisegKeszleten:1, mennyisegKosarban:0},
+    {azonosito:6, megnevezes:'Termék #6', ar: 40, mennyisegKeszleten:2, mennyisegKosarban:0},
+    {azonosito:7, megnevezes:'Termék #7', ar: 30, mennyisegKeszleten:0, mennyisegKosarban:0},
+    {azonosito:8, megnevezes:'Termék #8', ar: 10, mennyisegKeszleten:0, mennyisegKosarban:0},
+    {azonosito:9, megnevezes:'Termék #9', ar: 20, mennyisegKeszleten:0, mennyisegKosarban:0},
+    {azonosito:10, megnevezes:'Árucikk #10', ar: 110, mennyisegKeszleten:10, mennyisegKosarban:0},
+    {azonosito:11, megnevezes:'Árucikk #11', ar: 120, mennyisegKeszleten:5, mennyisegKosarban:0},
+    {azonosito:12, megnevezes:'Árucikk #12', ar: 100, mennyisegKeszleten:0, mennyisegKosarban:0},
+    {azonosito:13, megnevezes:'Árucikk #13', ar: 50, mennyisegKeszleten:20, mennyisegKosarban:0},
+    {azonosito:14, megnevezes:'Árucikk #14', ar: 40, mennyisegKeszleten:3, mennyisegKosarban:0},
+    {azonosito:15, megnevezes:'Árucikk #15', ar: 30, mennyisegKeszleten:8, mennyisegKosarban:0},
+];
