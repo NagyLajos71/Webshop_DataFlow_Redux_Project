@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { connect } from "react-redux";
+import axios from "axios";
 import TermekKartya from "./TermekKartya";
 import { kosarTartalmanakTorlese, fizetes } from "../actions";
 
@@ -47,6 +48,28 @@ const Kosar = ({
       kosarDarabszama > 0 ? reszosszeg + szallitasiDij : 0;
     setFizetendoOsszeg(fizetendoOsszegKalkulacio);
   });
+  //arfolyam lekerdezes axios-szal
+  const [EURHUFarfolyam, setEURHUFarfolyam] = useState(null);
+  const [fizetendoOsszegForintban, setFizetendoOsszegForintban]=useState(null);
+  useEffect(() => {
+    axios
+      .get("http://data.fixer.io/api/latest?", {
+        params: {
+          access_key: "1faa24fe37386ac7eb06e26b7f76a9f9",
+        },
+      })
+      .then((response) => {
+        console.log(response.data.rates["HUF"]);
+        setEURHUFarfolyam(response.data.rates["HUF"]);
+      })
+      .catch(() => {
+        setEURHUFarfolyam(null);
+      });
+  }, []);
+  //fizetendo osszeg forintban
+  useEffect(()=>{
+    setFizetendoOsszegForintban(Math.ceil(fizetendoOsszeg*EURHUFarfolyam/10)*10)
+  },[fizetendoOsszeg, EURHUFarfolyam])
 
   //SCROLLOZASRA BIZTATO UZENET
   const scrollTerulet = useRef(); //ahol a termekkartyak megjelennek; azt vizsgalom a kesobbiekben, hogy ennek minden resze lathato-e
@@ -102,8 +125,10 @@ const Kosar = ({
           <p>részösszeg: € {reszosszeg.toLocaleString()}</p>
           <p>szállítási díj: € {szallitasiDij}</p>
           <h4>fizetendő: € {fizetendoOsszeg}</h4>
+          {fizetendoOsszegForintban? <p className='forintOsszeg'>(Ft: {fizetendoOsszegForintban.toLocaleString()}, árf: {EURHUFarfolyam.toFixed(2)})</p>:null}
           <button
             className="btn btnFizetek"
+            style={fizetendoOsszeg? {visibility: 'visible'}: {visibility: 'hidden'}}
             onClick={() => {
               fizetesFunkcio();
             }}
